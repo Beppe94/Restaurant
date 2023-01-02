@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
-#content h1 {
+.navBar h1{
     display: flex;
     justify-content: center;
-    background: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
 }
