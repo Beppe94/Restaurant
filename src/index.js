@@ -1,1 +1,5 @@
-console.log('Hello lol');
+import home from './home';
+
+
+
+home();
