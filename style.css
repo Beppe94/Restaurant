@@ -12,3 +12,12 @@
     justify-content: space-evenly;
     flex: 1;
 }
+
+.navBar button.active {
+    background-color: #ccc;
+}
+
+.tab {
+    outline: none;
+    border: none;
+}
