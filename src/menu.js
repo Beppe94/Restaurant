@@ -24,6 +24,33 @@ export function createMenu() {
     return menuDiv
 }
 
+function makePizza(name, sourceImage, description, price) {
+    const dish = document.createElement('div');
+
+    const foodName = document.createElement('h2');
+    foodName.textContent = name;
+
+    const img = document.createElement('img');
+    img.src = sourceImage;
+
+    const foodInfo = document.createElement('div');
+
+    const foodDescription = document.createElement('p');
+    foodDescription.textContent = description;
+
+    const foodPrice = document.createElement('p');
+    foodPrice.textContent = price;
+
+    foodInfo.appendChild(foodDescription);
+    foodInfo.appendChild(foodPrice);
+
+    dish.appendChild(foodName);
+    dish.appendChild(img);
+    dish.appendChild(foodInfo);
+
+    return dish;
+}
+
 function loadMenu() {
     const tabContent = document.getElementById('tab-content');
 
@@ -31,7 +58,36 @@ function loadMenu() {
 
     setBtnActive('menu');
 
-    tabContent.appendChild(createMenu());
+    const pizzas = [
+        makePizza(
+            'pizza1',
+            'img',
+            'descript',
+            '1.00'
+        ),
+        makePizza(
+            'pizza2',
+            'img',
+            'descript',
+            '1.00'
+        ),
+        makePizza(
+            'pizza3',
+            'img',
+            'descript',
+            '1.00'
+        ),
+        makePizza(
+            'pizza4',
+            'img',
+            'descript',
+            '1.00'
+        ),
+    ]
+    
+    pizzas.forEach((pizza) => {
+        tabContent.appendChild(pizza);
+    })
 }
 
 export default loadMenu;
