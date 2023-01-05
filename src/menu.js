@@ -6,24 +6,6 @@ function setBtnActive(id) {
     homeBtn.classList.add('active');
 }
 
-export function createMenu() {
-    const menuDiv = document.createElement('div');
-    
-    const pizzaName = document.createElement('h2');
-    const pizzaDescription = document.createElement('p');
-    const pizzaPrice = document.createElement('p');
-
-    pizzaName.innerText = 'Quattro Formaggi';
-    pizzaDescription.innerText = 'Tomato sauce, Mozzarella, Gorgonzola, Parmigiano Reggiano and goat cheese';
-    pizzaPrice.innerText = '6.99';
-
-    menuDiv.appendChild(pizzaName);
-    menuDiv.appendChild(pizzaDescription);
-    menuDiv.appendChild(pizzaPrice);
-    
-    return menuDiv
-}
-
 function makePizza(name, sourceImage, description, price) {
     const dish = document.createElement('div');
 
@@ -31,7 +13,7 @@ function makePizza(name, sourceImage, description, price) {
     foodName.textContent = name;
 
     const img = document.createElement('img');
-    img.src = sourceImage;
+    img.setAttribute('src', sourceImage);
 
     const foodInfo = document.createElement('div');
 
@@ -61,7 +43,7 @@ function loadMenu() {
     const pizzas = [
         makePizza(
             'pizza1',
-            'img',
+            'https://www.davesamericanfood.com/wp-content/uploads/2020/04/pepperoni-pizza-scaled.jpg',
             'descript',
             '1.00'
         ),
