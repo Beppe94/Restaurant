@@ -27,8 +27,11 @@ export function createMenu() {
 function loadMenu() {
     const tabContent = document.getElementById('tab-content');
 
-    tabContent.appendChild(createMenu());
+    tabContent.textContent = ''
+
     setBtnActive('menu');
+
+    tabContent.appendChild(createMenu());
 }
 
 export default loadMenu;

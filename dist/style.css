@@ -13,11 +13,12 @@
     flex: 1;
 }
 
-.navBar button.active {
-    background-color: #ccc;
+.active {
+    background-color: rgb(28, 214, 59);
 }
 
 .tab {
     outline: none;
     border: none;
 }
+

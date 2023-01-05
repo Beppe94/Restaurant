@@ -17,7 +17,7 @@ function activeTab() {
 }
 
 function initialize() {
-    loadPage()
-    loadHome()
-    activeTab()
+    loadPage();
+    loadHome();
+    activeTab();
 }

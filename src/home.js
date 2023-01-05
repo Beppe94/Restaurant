@@ -1,15 +1,6 @@
-function setBtnActive(id) {
-    const activeBtn = document.querySelector('.tab.active');
-    if (activeBtn) activeBtn.classList.remove('active');
-  
-    const homeBtn = document.getElementById(id);
-    homeBtn.classList.add('active');
-}
-
-
 function createHome() {
     const infoDiv = document.createElement('div');
-    infoDiv.setAttribute('id', 'menu');
+    infoDiv.setAttribute('id', 'home');
 
     
     const introDiv = document.createElement('div');
@@ -32,18 +23,25 @@ function createHome() {
     
     infoDiv.appendChild(introDiv);
     infoDiv.appendChild(hourDiv);
-
+    
     return infoDiv;
+}
+
+function setBtnActive(id) {
+    const activeBtn = document.querySelector('.tab.active');
+    if (activeBtn) activeBtn.classList.remove('active');
+    
+    const homeBtn = document.getElementById(id);
+    homeBtn.classList.add('active');
 }
 
 function loadHome() {
     const tabContent = document.getElementById('tab-content');
-
-    tabContent.appendChild(createHome());
+    tabContent.textContent = '';
 
     setBtnActive('home');
-
-    return tabContent;
+    
+    tabContent.appendChild(createHome());
 }
 
 export default loadHome;
