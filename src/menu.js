@@ -42,28 +42,28 @@ function loadMenu() {
 
     const pizzas = [
         makePizza(
-            'pizza1',
+            'Pizza Pepperoni',
             'https://www.davesamericanfood.com/wp-content/uploads/2020/04/pepperoni-pizza-scaled.jpg',
-            'descript',
-            '1.00'
+            'Tomato sauce, Mozzarella, Pepperoni',
+            '4.99'
         ),
         makePizza(
-            'pizza2',
-            'img',
-            'descript',
-            '1.00'
+            'Pizza Margherita',
+            'https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg',
+            'Tomato sauce, Mozzarella, Fresh basil',
+            '3.99'
         ),
         makePizza(
-            'pizza3',
-            'img',
-            'descript',
-            '1.00'
+            'Pizza Frutti di Mare',
+            'https://cdn.tasteatlas.com/images/dishes/2475b8aa94c1463dbe9dc17e0f38a063.jpg?mw=1300',
+            'Tomato sauce, Shrimps, Moussels, Squid',
+            '6.99'
         ),
         makePizza(
-            'pizza4',
-            'img',
-            'descript',
-            '1.00'
+            'Pizza Sausage',
+            'https://healthyschoolrecipes.com/wp-content/uploads/2020/10/sausage-onion-pizza-scaled.jpg',
+            'Tomato sauce, Mozzarella, Sausages, Onions',
+            '5.99'
         ),
     ]
     
