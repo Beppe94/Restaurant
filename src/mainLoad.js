@@ -41,6 +41,24 @@ function createButtons() {
     return nav;
 }
 
+function createFooter() {
+    const footer = document.createElement('div');
+    const footerText = document.createElement('p');
+    const footerLink = document.createElement('a');
+    const footerIcon = document.createElement('img');
+
+    footerLink.href = 'https://github.com/Beppe94';
+    footerIcon.src = '../dist/icons/github.png';
+
+    footerLink.appendChild(footerIcon);
+    footerText.innerText = 'Beppe94 2022 - Check out my GitHub';
+
+    footer.appendChild(footerText);
+    footer.appendChild(footerLink);
+
+    return footer;
+}
+
 function loadPage() {
     const content = document.getElementById('content');
     const tabContent = document.createElement('div');
@@ -49,6 +67,7 @@ function loadPage() {
     content.appendChild(createNav());   
     content.appendChild(createButtons());
     content.appendChild(tabContent);
+    content.appendChild(createFooter());
 }
 
 export default loadPage;
