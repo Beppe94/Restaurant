@@ -1,6 +1,7 @@
 import loadPage from './mainLoad';
 import loadHome from './home';
 import loadMenu from './menu';
+import loadContact from './contact';
 
 
 initialize();
@@ -13,7 +14,7 @@ function activeTab() {
     
     homeBtn.addEventListener('click', loadHome);
     menuBtn.addEventListener('click', loadMenu);
-
+    contactBtn.addEventListener('click', loadContact);
 }
 
 function initialize() {
