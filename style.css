@@ -1,16 +1,69 @@
-*::before, *::after {
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, *::before, *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.navBar h1{
+:root {
+    --white: #fefefe;
+    --title: 'Kaushan Script', 'cursive';
+    --font-page: 'Roboto', sans-serif;
+}
+
+body {
+    background: url('../dist/icons/oven.jpg');
+    font-size: 1em;
+    font-family: var(--font-page);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+
+}
+
+.navBar {
+    font-size: 3rem;
+    font-family: var(--title);
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(60%) contrast(110%) brightness(130%);
+    width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;
-    flex: 1;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    color: var(--white);
+    font-size: 1rem;
+    height: 60px;
+    width: 120px;
+    background: none;
+    border: 0;
+}
+
+.buttons button:hover {
+    scale: 1.1;
+    border-bottom: 3px solid #FFF;
 }
 
 .active {
