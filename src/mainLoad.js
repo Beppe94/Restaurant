@@ -43,6 +43,8 @@ function createButtons() {
 
 function createFooter() {
     const footer = document.createElement('div');
+    footer.setAttribute('class', 'footer');
+    
     const footerText = document.createElement('p');
     const footerLink = document.createElement('a');
     const footerIcon = document.createElement('img');
