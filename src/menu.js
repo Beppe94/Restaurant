@@ -35,6 +35,8 @@ function makePizza(name, sourceImage, description, price) {
 
 function loadMenu() {
     const tabContent = document.getElementById('tab-content');
+    const menuContent = document.createElement('div');
+    menuContent.setAttribute('class', 'menu-content');
 
     tabContent.textContent = ''
 
@@ -68,8 +70,11 @@ function loadMenu() {
     ]
     
     pizzas.forEach((pizza) => {
-        tabContent.appendChild(pizza);
+        pizza.setAttribute('class', 'menu-item');
+        menuContent.appendChild(pizza);
     })
+
+    tabContent.appendChild(menuContent)
 }
 
 export default loadMenu;
