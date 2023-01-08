@@ -21,9 +21,9 @@ function createContact() {
     phoneNumber.innerText = '123 456789';
     location.innerText = 'One near you!';
 
-    numberDiv.appendChild(getImage('dist/icons/phone.png'));
+    numberDiv.appendChild(getImage('/dist/icons/phone.png'));
     numberDiv.appendChild(phoneNumber);
-    locationDiv.appendChild(getImage('dist/icons/location.png'))
+    locationDiv.appendChild(getImage('/dist/icons/location.png'))
     locationDiv.appendChild(location);
 
     contactInfo.appendChild(numberDiv);
