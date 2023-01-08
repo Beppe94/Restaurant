@@ -8,16 +8,26 @@ function setBtnActive(id) {
 
 function createContact() {
     const contactInfo = document.createElement('div');
-    const phoneNumber = document.createElement('p');
-    const location = document.createElement('p');
+    contactInfo.setAttribute('class', 'info-tab')
 
-    phoneNumber.innerText = '123456789';
+    const numberDiv = document.createElement('div');
+    const phoneNumber = document.createElement('p');
+    numberDiv.setAttribute('class', 'number-info');
+    
+    const locationDiv = document.createElement('div');
+    const location = document.createElement('p');
+    locationDiv.setAttribute('class', 'location-info');
+
+    phoneNumber.innerText = '123 456789';
     location.innerText = 'One near you!';
 
-    contactInfo.appendChild(getImage('../dist/icons/call_FILL0_wght400_GRAD0_opsz48.png'));
-    contactInfo.appendChild(phoneNumber);
-    contactInfo.appendChild(getImage('../dist/icons/location_on_FILL0_wght400_GRAD0_opsz48.png'))
-    contactInfo.appendChild(location);
+    numberDiv.appendChild(getImage('../dist/icons/phone.png'));
+    numberDiv.appendChild(phoneNumber);
+    locationDiv.appendChild(getImage('../dist/icons/location.png'))
+    locationDiv.appendChild(location);
+
+    contactInfo.appendChild(numberDiv);
+    contactInfo.appendChild(locationDiv);
  
     return contactInfo;
 }

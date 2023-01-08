@@ -53,7 +53,7 @@ function createFooter() {
     footerIcon.src = '../dist/icons/github.png';
 
     footerLink.appendChild(footerIcon);
-    footerText.innerText = 'Beppe94 2022 - Check out my GitHub';
+    footerText.innerText = 'Beppe94 2023 - Check out my GitHub';
 
     footer.appendChild(footerText);
     footer.appendChild(footerLink);
