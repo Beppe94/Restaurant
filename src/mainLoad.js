@@ -50,7 +50,7 @@ function createFooter() {
     const footerIcon = document.createElement('img');
 
     footerLink.href = 'https://github.com/Beppe94';
-    footerIcon.src = '../dist/icons/github.png';
+    footerIcon.src = 'file:///home/beppe/repos/Restaurant/dist/icons/github.png';
 
     footerLink.appendChild(footerIcon);
     footerText.innerText = 'Beppe94 2023 - Check out my GitHub';
