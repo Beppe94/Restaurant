@@ -23,7 +23,7 @@ function createContact() {
 
     numberDiv.appendChild(getImage('./dist/icons/phone.png'));
     numberDiv.appendChild(phoneNumber);
-    locationDiv.appendChild(getImage('./dist/icons/location.png'))
+    locationDiv.appendChild(getImage('/Restaurant/dist/icons/location.png'))
     locationDiv.appendChild(location);
 
     contactInfo.appendChild(numberDiv);
