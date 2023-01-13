@@ -34,7 +34,7 @@ function createContact() {
 
 function getImage(path) {
     const icon = document.createElement('img');
-
+    
     icon.setAttribute('src', path);
 
     return icon;
