@@ -64,7 +64,7 @@ function loadMenu() {
         makePizza(
             'Pizza Sausage',
             'https://healthyschoolrecipes.com/wp-content/uploads/2020/10/sausage-onion-pizza-scaled.jpg',
-            'Tomato sauce, Mozzarella, Sausages, Onions',
+            'Tomato sauce, Mozzarella, Sausages',
             '5.99'
         ),
     ]
