@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url('/dist/icons/oven.jpg');
+    background: url('Restaurant/dist/icons/oven.jpg');
     font-size: 1em;
     font-family: var(--font-page);
     height: 100vh;
