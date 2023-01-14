@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dist_icons_phone_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../dist/icons/phone.png */ \"./dist/icons/phone.png\");\n/* harmony import */ var _dist_icons_location_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../dist/icons/location.png */ \"./dist/icons/location.png\");\n\n\n\nfunction setBtnActive(id) {\n    const activeBtn = document.querySelector('.tab.active');\n    if (activeBtn) activeBtn.classList.remove('active');\n    \n    const homeBtn = document.getElementById(id);\n    homeBtn.classList.add('active');\n}\n\nfunction createContact() {\n    const contactInfo = document.createElement('div');\n    contactInfo.setAttribute('class', 'info-tab')\n\n    const numberDiv = document.createElement('div');\n    const phoneNumber = document.createElement('p');\n    numberDiv.setAttribute('class', 'number-info');\n    \n    const locationDiv = document.createElement('div');\n    const location = document.createElement('p');\n    locationDiv.setAttribute('class', 'location-info');\n\n    phoneNumber.innerText = '123 456789';\n    location.innerText = 'One near you!';\n\n    numberDiv.appendChild(getImage(_dist_icons_phone_png__WEBPACK_IMPORTED_MODULE_0__));\n    numberDiv.appendChild(phoneNumber);\n    locationDiv.appendChild(getImage(_dist_icons_location_png__WEBPACK_IMPORTED_MODULE_1__))\n    locationDiv.appendChild(location);\n\n    contactInfo.appendChild(numberDiv);\n    contactInfo.appendChild(locationDiv);\n \n    return contactInfo;\n}\n\nfunction getImage(path) {\n    const icon = document.createElement('img');\n    \n    icon.setAttribute('src', path);\n\n    return icon;\n}\n\nfunction loadContact() {\n    const tabContent = document.getElementById('tab-content');\n\n    tabContent.textContent = '';\n\n    setBtnActive('contact');\n\n    tabContent.appendChild(createContact());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/phone.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/location.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\nfunction setBtnActive(id) {\n    const activeBtn = document.querySelector('.tab.active');\n    if (activeBtn) activeBtn.classList.remove('active');\n    \n    const homeBtn = document.getElementById(id);\n    homeBtn.classList.add('active');\n}\n\nfunction createContact() {\n    const contactInfo = document.createElement('div');\n    contactInfo.setAttribute('class', 'info-tab')\n\n    const numberDiv = document.createElement('div');\n    const phoneNumber = document.createElement('p');\n    numberDiv.setAttribute('class', 'number-info');\n    \n    const locationDiv = document.createElement('div');\n    const location = document.createElement('p');\n    locationDiv.setAttribute('class', 'location-info');\n\n    phoneNumber.innerText = '123 456789';\n    location.innerText = 'One near you!';\n\n    numberDiv.appendChild(getImage(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/phone.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())));\n    numberDiv.appendChild(phoneNumber);\n    locationDiv.appendChild(getImage(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/location.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())))\n    locationDiv.appendChild(location);\n\n    contactInfo.appendChild(numberDiv);\n    contactInfo.appendChild(locationDiv);\n \n    return contactInfo;\n}\n\nfunction getImage(path) {\n    const icon = document.createElement('img');\n    \n    icon.setAttribute('src', path);\n\n    return icon;\n}\n\nfunction loadContact() {\n    const tabContent = document.getElementById('tab-content');\n\n    tabContent.textContent = '';\n\n    setBtnActive('contact');\n\n    tabContent.appendChild(createContact());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);\n\n//# sourceURL=webpack://restaurant/./src/contact.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mai
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _dist_icons_github_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../dist/icons/github.png */ \"./dist/icons/github.png\");\n\n\nfunction createNav() {\n    const navBar = document.createElement('div');\n    navBar.setAttribute('class', 'navBar');\n    navBar.setAttribute('id', 'nav')\n    const title = document.createElement('h1');\n\n    title.textContent = 'La Pizzeria';\n\n    navBar.appendChild(title);\n\n    return navBar;\n}\n\nfunction createButtons() {\n    const nav = document.getElementById('nav');\n    const btnDiv = document.createElement('div');\n\n    btnDiv.setAttribute('class', 'buttons');    \n    \n    const homeBtn = document.createElement('button');\n    homeBtn.textContent = 'Home';\n    const menuBtn = document.createElement('button');\n    menuBtn.innerText = 'Menu';\n    const contactBtn = document.createElement('button');\n    contactBtn.innerText = 'Contact Us';\n\n    homeBtn.setAttribute('id', 'home');\n    menuBtn.setAttribute('id', 'menu');\n    contactBtn.setAttribute('id', 'contact');\n    \n    homeBtn.classList.add('tab');\n    menuBtn.classList.add('tab');\n    contactBtn.classList.add('tab');\n    \n    btnDiv.appendChild(homeBtn);\n    btnDiv.appendChild(menuBtn);\n    btnDiv.appendChild(contactBtn);\n    \n    nav.appendChild(btnDiv);\n\n    return nav;\n}\n\nfunction createFooter() {\n    const footer = document.createElement('div');\n    footer.setAttribute('class', 'footer');\n    \n    const footerText = document.createElement('p');\n    const footerLink = document.createElement('a');\n    const footerIcon = document.createElement('img');\n\n    footerLink.href = 'https://github.com/Beppe94';\n    footerIcon.src = _dist_icons_github_png__WEBPACK_IMPORTED_MODULE_0__;\n\n    footerLink.appendChild(footerIcon);\n    footerText.innerText = 'Beppe94 2023 - Check out my GitHub';\n\n    footer.appendChild(footerText);\n    footer.appendChild(footerLink);\n\n    return footer;\n}\n\nfunction loadPage() {\n    const content = document.getElementById('content');\n    const tabContent = document.createElement('div');\n    tabContent.setAttribute('id', 'tab-content');\n    \n    content.appendChild(createNav());   \n    content.appendChild(createButtons());\n    content.appendChild(tabContent);\n    content.appendChild(createFooter());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant/./src/mainLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/github.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nfunction createNav() {\n    const navBar = document.createElement('div');\n    navBar.setAttribute('class', 'navBar');\n    navBar.setAttribute('id', 'nav')\n    const title = document.createElement('h1');\n\n    title.textContent = 'La Pizzeria';\n\n    navBar.appendChild(title);\n\n    return navBar;\n}\n\nfunction createButtons() {\n    const nav = document.getElementById('nav');\n    const btnDiv = document.createElement('div');\n\n    btnDiv.setAttribute('class', 'buttons');    \n    \n    const homeBtn = document.createElement('button');\n    homeBtn.textContent = 'Home';\n    const menuBtn = document.createElement('button');\n    menuBtn.innerText = 'Menu';\n    const contactBtn = document.createElement('button');\n    contactBtn.innerText = 'Contact Us';\n\n    homeBtn.setAttribute('id', 'home');\n    menuBtn.setAttribute('id', 'menu');\n    contactBtn.setAttribute('id', 'contact');\n    \n    homeBtn.classList.add('tab');\n    menuBtn.classList.add('tab');\n    contactBtn.classList.add('tab');\n    \n    btnDiv.appendChild(homeBtn);\n    btnDiv.appendChild(menuBtn);\n    btnDiv.appendChild(contactBtn);\n    \n    nav.appendChild(btnDiv);\n\n    return nav;\n}\n\nfunction createFooter() {\n    const footer = document.createElement('div');\n    footer.setAttribute('class', 'footer');\n    \n    const footerText = document.createElement('p');\n    const footerLink = document.createElement('a');\n    const footerIcon = document.createElement('img');\n\n    footerLink.href = 'https://github.com/Beppe94';\n    footerIcon.src = Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './icons/github.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n    footerLink.appendChild(footerIcon);\n    footerText.innerText = 'Beppe94 2023 - Check out my GitHub';\n\n    footer.appendChild(footerText);\n    footer.appendChild(footerLink);\n\n    return footer;\n}\n\nfunction loadPage() {\n    const content = document.getElementById('content');\n    const tabContent = document.createElement('div');\n    tabContent.setAttribute('id', 'tab-content');\n    \n    content.appendChild(createNav());   \n    content.appendChild(createButtons());\n    content.appendChild(tabContent);\n    content.appendChild(createFooter());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant/./src/mainLoad.js?");
 
 /***/ }),
 
@@ -57,36 +57,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction setBtnActive(id) {\n    const activeBtn = document.querySelector('.tab.active');\n    if (activeBtn) activeBtn.classList.remove('active');\n  \n    const homeBtn = document.getElementById(id);\n    homeBtn.classList.add('active');\n}\n\nfunction makePizza(name, sourceImage, description, price) {\n    const dish = document.createElement('div');\n\n    const foodName = document.createElement('h2');\n    foodName.textContent = name;\n\n    const img = document.createElement('img');\n    img.setAttribute('src', sourceImage);\n\n    const foodInfo = document.createElement('div');\n\n    const foodDescription = document.createElement('p');\n    foodDescription.textContent = description;\n\n    const foodPrice = document.createElement('p');\n    foodPrice.textContent = price;\n\n    foodInfo.appendChild(foodDescription);\n    foodInfo.appendChild(foodPrice);\n\n    dish.appendChild(foodName);\n    dish.appendChild(img);\n    dish.appendChild(foodInfo);\n\n    return dish;\n}\n\nfunction loadMenu() {\n    const tabContent = document.getElementById('tab-content');\n    const menuContent = document.createElement('div');\n    menuContent.setAttribute('class', 'menu-content');\n\n    tabContent.textContent = ''\n\n    setBtnActive('menu');\n\n    const pizzas = [\n        makePizza(\n            'Pizza Pepperoni',\n            'https://www.davesamericanfood.com/wp-content/uploads/2020/04/pepperoni-pizza-scaled.jpg',\n            'Tomato sauce, Mozzarella, Pepperoni',\n            '4.99'\n        ),\n        makePizza(\n            'Pizza Margherita',\n            'https://upload.wikimedia.org/wikipedia/commons/c/c8/Pizza_Margherita_stu_spivack.jpg',\n            'Tomato sauce, Mozzarella, Fresh basil',\n            '3.99'\n        ),\n        makePizza(\n            'Pizza Frutti di Mare',\n            'https://cdn.tasteatlas.com/images/dishes/2475b8aa94c1463dbe9dc17e0f38a063.jpg?mw=1300',\n            'Tomato sauce, Shrimps, Moussels, Squid',\n            '6.99'\n        ),\n        makePizza(\n            'Pizza Sausage',\n            'https://healthyschoolrecipes.com/wp-content/uploads/2020/10/sausage-onion-pizza-scaled.jpg',\n            'Tomato sauce, Mozzarella, Sausages',\n            '5.99'\n        ),\n    ]\n    \n    pizzas.forEach((pizza) => {\n        pizza.setAttribute('class', 'menu-item');\n        menuContent.appendChild(pizza);\n    })\n\n    tabContent.appendChild(menuContent)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);\n\n//# sourceURL=webpack://restaurant/./src/menu.js?");
-
-/***/ }),
-
-/***/ "./dist/icons/github.png":
-/*!*******************************!*\
-  !*** ./dist/icons/github.png ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"d9098dfd5e58f37580ee.png\";\n\n//# sourceURL=webpack://restaurant/./dist/icons/github.png?");
-
-/***/ }),
-
-/***/ "./dist/icons/location.png":
-/*!*********************************!*\
-  !*** ./dist/icons/location.png ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"d5f90ee7884e932a5e47.png\";\n\n//# sourceURL=webpack://restaurant/./dist/icons/location.png?");
-
-/***/ }),
-
-/***/ "./dist/icons/phone.png":
-/*!******************************!*\
-  !*** ./dist/icons/phone.png ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"d82966de69890e867e26.png\";\n\n//# sourceURL=webpack://restaurant/./dist/icons/phone.png?");
 
 /***/ })
 
@@ -129,18 +99,6 @@ eval("module.exports = __webpack_require__.p + \"d82966de69890e867e26.png\";\n\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -155,26 +113,6 @@ eval("module.exports = __webpack_require__.p + \"d82966de69890e867e26.png\";\n\n
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
