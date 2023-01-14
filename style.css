@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('/dist/icons/oven.jpg');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -15,7 +16,7 @@
 }
 
 body {
-    background: url('Restaurant/dist/icons/oven.jpg');
+    background: url('/dist/icons/oven.jpg');
     font-size: 1em;
     font-family: var(--font-page);
     height: 100vh;
