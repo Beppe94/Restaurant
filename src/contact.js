@@ -1,5 +1,5 @@
-import phoneIcon from '/dist/icons/phone.png';
-import locationIcon from '/dist/icons/location.png';
+import phoneIcon from './icons/phone.png';
+import locationIcon from './icons/location.png';
 
 function setBtnActive(id) {
     const activeBtn = document.querySelector('.tab.active');

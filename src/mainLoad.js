@@ -1,4 +1,4 @@
-import ghLogo from '/dist/icons/github.png';
+import ghLogo from './icons/github.png';
 
 function createNav() {
     const navBar = document.createElement('div');
