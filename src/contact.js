@@ -1,3 +1,6 @@
+import phoneIcon from '/dist/icons/phone.png';
+import locationIcon from '/dist/icons/location.png';
+
 function setBtnActive(id) {
     const activeBtn = document.querySelector('.tab.active');
     if (activeBtn) activeBtn.classList.remove('active');
@@ -21,9 +24,9 @@ function createContact() {
     phoneNumber.innerText = '123 456789';
     location.innerText = 'One near you!';
 
-    numberDiv.appendChild(getImage('Restaurant/dist/icons/phone.png'));
+    numberDiv.appendChild(getImage(phoneIcon));
     numberDiv.appendChild(phoneNumber);
-    locationDiv.appendChild(getImage('Restaurant/dist/icons/location.png'))
+    locationDiv.appendChild(getImage(locationIcon))
     locationDiv.appendChild(location);
 
     contactInfo.appendChild(numberDiv);
