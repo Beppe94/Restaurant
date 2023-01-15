@@ -1,5 +1,3 @@
-import ghLogo from './icons/github.png';
-
 function createNav() {
     const navBar = document.createElement('div');
     navBar.setAttribute('class', 'navBar');
@@ -52,7 +50,8 @@ function createFooter() {
     const footerIcon = document.createElement('img');
 
     footerLink.href = 'https://github.com/Beppe94';
-    footerIcon.src = ghLogo;
+
+    footerIcon.src = 'icons/github.png';
 
     footerLink.appendChild(footerIcon);
     footerText.innerText = 'Beppe94 2023 - Check out my GitHub';
